@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(27, 172, 240);
+    font: normal; size:15 Arial; 
+}
+
+header {
+    color: rgb(251, 255, 0);
+    text-align: center;
+    font:normal; size: 200 Times;
+}
+
+section {
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 25px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 15px black;
+}
+
+div {
+    text-align:left;
+    padding: 8px;
+    font: normal; size: 20 arial Verdana; font-weight: bold;
+}
+
+footer {
+    color: rgb(14, 14, 14);
+    text-align: center;
+    size: 150 Times;
+}
