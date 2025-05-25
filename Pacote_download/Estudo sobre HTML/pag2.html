@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Meus vídeos</title>
+</head>
+<body>
+    <div id="res"></div>
+    <div id="video"></div>
+    
+    <!-- Botão de voltar com texto -->
+    <button onclick="voltar()">Voltar</button>
+
+    <script>
+        const params = new URLSearchParams(window.location.search)
+        const escolha = params.get('escolha')
+        const res = document.getElementById('res')
+        const video = document.getElementById('video')
+
+        switch (escolha) {
+            case 'opcao1': 
+                res.innerHTML = `Curso de HTML e CSS - Aula 1`
+                video.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/E6CdIawPTh0" frameborder="0" allowfullscreen></iframe>`
+                break
+
+            case 'opcao2':
+                res.innerHTML = `Curso de HTML e CSS - Aula 2`
+                video.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/vPNIAJ9B4hg" frameborder="0" allowfullscreen></iframe>`
+                break
+
+            case 'opcao3': 
+                res.innerHTML = `Curso de HTML e CSS - Aula 3`
+                video.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/ofFgnDtn_1c" frameborder="0" allowfullscreen></iframe>`
+                break
+
+            case 'opcao4': 
+                res.innerHTML  = `Curso de HTML e CSS - Aula 4`
+                video.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/zHKHMmEG9vE" frameborder="0" allowfullscreen></iframe>`
+                break
+
+            default:
+                res.innerHTML = `Nenhum vídeo selecionado`
+        }
+
+        function voltar() {
+            window.location.href = 'index.html'
+        }
+    </script>
+</body>
+</html>

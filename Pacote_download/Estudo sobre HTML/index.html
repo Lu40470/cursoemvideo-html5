@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Meus vídeos</title>
+</head>
+<body>
+    <h1><strong>Vídeos legais para assistir</strong></h1>
+    <br>
+    <a href="#" onclick="redirecionar('opcao1')"><img src="video1.jpg" alt="Vídeo 1"></a>
+    <a href="#" onclick="redirecionar('opcao2')"><img src="video2.jpg" alt="Vídeo 2"></a>
+    <a href="#" onclick="redirecionar('opcao3')"><img src="video3.jpg" alt="Vídeo 3"></a>
+    <a href="#" onclick="redirecionar('opcao4')"><img src="video4.jpg" alt="Vídeo 4"></a>
+    <br>
+    <script>
+        function redirecionar (opcao) 
+        {
+            window.location.href = `pag2.html?escolha=${opcao}`
+        }
+    </script>
+</body>
+</html>
